@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+    <script src="p6.js"></script>
+    <style>
+        dialog {
+            background: grey;
+            color: lightgray;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 5px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h3>DETAILS TAG</h3>
+        <p>The tag is used to specify the additional details on the web page that the user can view or hide on demand
+        </p>
+    </center>
+    <hr>
+
+    <center>
+        <h3>This is SUMMARY TAG</h3>
+        <p>The <b>SUMMARY TAG</b> is used with <b>DETAILS</b> tag. It is used as a summary, caption or legend, for the
+            content of a details element.
+        </p>
+    </center>
+
+    <details>
+        <summmary>HTML</summary>
+            <h1>HTML</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ducimus quo delectus, expedita placeat
+                nulla mollitia totam at in,
+            </p>
+    </details>
+    <details>
+        <summmary>CSS</summary>
+            <h1>CSS</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ducimus quo delectus, expedita placeat
+                nulla mollitia totam at in,
+            </p>
+    </details>
+
+    <details>
+        <summmary>JS</summary>
+            <h1>JS</h1>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ducimus quo delectus, expedita placeat
+                nulla mollitia totam at in.
+            </p>
+    </details>
+
+    <CENTER>
+        <h3>TIME TAG...</h3>
+        <p>
+            <b>HTML Time tag</b> is used to define date and time. It displays time value in a 24hr clock or a presice
+            date in a Gregorian calendar in HTML
+        </p>
+    </CENTER>
+    <hr>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur 2:30 PM adipisicing elit. Soluta culpa amet ipsam recusandae, est ea,
+        dolore a delectus velit commodi quod. Quam error alias commodi doloremque corrupti quaerat quis laudantium.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta voluptatum magni nostrum explicabo, eius velit
+        quo eum incidunt, <time>2.30 </time>PMasperiores animi vel alias dignissimos. Reiciendis, ullam! Reprehenderit
+        iure at impedit temporibus!
+    </p>
+    <hr>
+
+    <center>
+        <h2>DIALOG TAG</h2>
+        <p>This tag defines a dialog box or subwindow. The <b>dialog element</b> makes it easy to create popup dialogs
+            and modals on a web page.</p>
+    </center>
+    <dialog id="dd">
+        <button type="button" id="btn2">&times;</button>
+        <h2>FULLSTACK</h2>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit hic quis voluptates
+            laudantium perferendis reiciendis delectus ipsam corrupti? Vel ex eveniet quod deserunt nam maiores illo in
+            delectus commodi.
+        </P>
+    </dialog>
+
+    <button id="btn1" type="button">OPEN DIALOG</button>
+
+    <script>
+        document.getElementById("btn1").onclick = function(){
+            document.getElementById("dd").show();
+        };
+        document.getElementById("btn2").onclick = function(){
+            document.getElementById("dd").close();
+        }
+    </script>
+
+
+</body>
+
+</html>
